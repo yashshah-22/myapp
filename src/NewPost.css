@@ -1,0 +1,81 @@
+.post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    
+  }
+  
+  .post textarea {
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 80px;
+    margin: 0;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+  }
+  
+  .post .post-media {
+    margin-top: 10px;
+  }
+  
+  .post .post-media input[type="file"] {
+  }
+  
+  .post .post-media img {
+    width:500px;
+    height:500px;
+  }
+  
+  .post .post-actions button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .post .post-actions button:hover {
+    color: #000;
+  }
+  
+  .post .post-comments {
+    margin-top: 10px;
+  }
+  
+  .post .post-comments div {
+    margin-bottom: 5px;
+  }
+  
+  .post form {
+    margin-top: 10px;
+  }
+  
+  .post form input[type="text"] {
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 80%;
+  }
+  
+  .post form button[type="submit"] {
+    background-color: #008CBA;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 20%;
+  }
+  
+  .post form button[type="submit"]:hover {
+    background-color: #006B9F;
+  }
+  

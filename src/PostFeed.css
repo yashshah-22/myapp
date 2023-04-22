@@ -1,0 +1,47 @@
+.post {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .post img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .post-details {
+    flex: 1;
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .post-header h2 {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .post-header span {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .post-body p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .post-actions button {
+    margin-right: 10px;
+  }
+  
+  .feed {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

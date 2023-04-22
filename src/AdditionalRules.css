@@ -1,0 +1,10 @@
+.some{
+    border:1px solid black;
+    margin:20px;
+    padding:20px;
+    font-size: 18px;
+    background-color: aliceblue;
+}
+.some p{
+    font-size: 25px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Store Details</title>
+    <style>
+      body {
+        background-image: linear-gradient(to bottom, #3f87a6, #ebf8e1);
+        color: #333;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 1s ease-in-out;
+      }
+      
+      h1 {
+        color: #333;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+      
+      a {
+        color: #00bfff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+      }
+      
+      a:hover {
+        color: #008080;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      
+      .flashes {
+        background-color: #ffe6e6;
+        color: #cc0000;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        animation: pulse 2s ease-in-out infinite;
+      }
+      
+      .flashes li {
+        list-style: none;
+      }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(204, 0, 0, 0.4);
+        }
+        70% {
+          box-shadow: 0 0 0 20px rgba(204, 0, 0, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(204, 0, 0, 0);
+        }
+      }
+      
+    </style>
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1>Store Voter ID or Aadhaar card details</h1>
+      <p>Cast your vote to make a difference!</p>
+      <p><a href="{{ url_for('voter') }}">Add Voter ID details</a></p>
+      
+        <ul class="flashes">
+            <p>As responsible citizens, it is important for us to exercise our right to vote.<br>
+                 Voting gives us the power to choose our representatives and have a say in <br>
+                 how our country is governed. It is the foundation of our democracy and the<br>
+                  best way to ensure that our voices are heard.</p>
+            <p>But with voting comes the responsibility of ensuring that our voter ID details<br>
+                 are up-to-date and accurate. This website allows you to store your Aadhaar card<br>
+                  or Voter ID details securely and conveniently, so that you can easily access them<br>
+                   when you need to.</p>
+        </ul>
+        
+    </div>
+</body>
+</html>

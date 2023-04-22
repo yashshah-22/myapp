@@ -1,0 +1,74 @@
+.App {
+    text-align: center;
+    
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border:1px solid black;
+    padding:10px;
+    background-color:aliceblue;
+  }
+  
+  
+  .player-input {
+    margin-right: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .join-game-button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .join-game-button:hover {
+    background-color: #0052a3;
+  }
+  
+  .winner-container {
+    margin-top: 20px;
+    animation: slideInUp 0.5s ease-in-out;
+  }
+  
+  h2 {
+    color: #0066cc;
+    animation: scaleUp 0.5s ease-in-out;
+  }
+  
+  @keyframes slideInUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  

@@ -1,0 +1,80 @@
+.App{
+    margin:40px auto;
+    max-width: 1000px;
+    padding: 20px;
+    max-height: 1000px;
+    background-color:darkcyan;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .coupons {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+  }
+  
+  .coupon {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    margin: 1rem;
+    padding: 1rem;
+    width: calc(33.33% - 2rem);
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .code {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .coupon {
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    width: calc(33.33% - 2rem);
+    position: relative; /* add this to make the pseudo-element position correctly */
+    margin:1rem;
+  }
+  
+  .coupon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url();
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  .coupon::before {
+    /* ... existing styles ... */
+    transition: all 0.3s ease-in-out; /* add this for the animation */
+  }
+  
+  .coupon:hover::before {
+    transform: translateY(-100%); /* add this to reveal the coupon */
+  }
+  .ct{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .cd{
+    font-size: 20px;
+  }
+      

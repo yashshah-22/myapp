@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My</title>
+    <style>
+      body {
+        background-image: url("https://images.unsplash.com/photo-1500648767791-00dcc994a43e");
+        background-size: cover;
+        background-position: center;
+        color: #eee;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+      }
+      h1 {
+        color: #eee;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        animation: fadeIn 1s ease-in-out;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+      }
+      a:hover {
+        color: #eee;
+        text-decoration: none;
+        box-shadow: 2px 2px 2px #ccc;
+      }
+      .flashes {
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+        color: #721c24;
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 1rem;
+        border-radius: 0.25rem;
+      }
+      .flashes li {
+        list-style: none;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+    
+  </head>
+  <body>
+    <h1>Store Aadhaar card or Voter ID details</h1>
+    <p><a href="{{ url_for('voter') }}">Add Voter ID details</a></p>
+    
+    <div class="flashes">
+      <p>As responsible citizens, it is important for us to exercise our right to vote. Voting gives us the power to choose our representatives and have a say in how our country is governed. It is the foundation of our democracy and the best way to ensure that our voices are heard.</p>
+      <p>But with voting comes the responsibility of ensuring that our voter ID details are up-to-date and accurate. This website allows you to store your Aadhaar card or Voter ID details securely and conveniently, so that you can easily access them when you need to.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+.entire{
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: darkcyan;
+
+}
+.form {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+        max-width: 500px;
+        padding: 20px;
+        
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+        margin-top: 30px;
+        display:flex;
+        flex-direction: column;
+  }
+  .form-label{
+    font-size: 15px;
+    padding-right: 70px;
+  }
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 10px;
+    text-align: left;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding-right: 70px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button[type='submit'] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #555;
+  }
+/* Style for form section headings */
+.form-section {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  /* Style for form input labels */
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  .form x{
+    margin-top: 10px;
+  }
+  /* Style for required input labels */
+  .form-label.required:after {
+    content: "*";
+    color: #ff0000;
+    margin-left: 5px;
+  }
+  
+  /* Style for form input error messages */
+  .form-input-error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Style for success message */
+  .form-success {
+    color: #008000;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Style for error message */
+  .form-error {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Style for disabled button */
+  .form-submit-button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Style for button when form is submitting */
+  .form-submitting .form-submit-button {
+    background-color: #ccc;
+    cursor: progress;
+  }
+    

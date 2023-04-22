@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Voter ID Form</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        color: #333;
+        font-family: Arial, sans-serif;
+      }
+      form {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #ccc;
+        padding: 20px;
+        margin: 20px auto;
+        width: 80%;
+        animation: fadeIn 1s ease-in-out;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="number"],
+      textarea,
+      select {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        padding: 5px;
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/voter" method="POST">
+      <label for="voter_id">Voter ID Number:</label>
+      <input type="text" id="voter_id" name="voter_id" required>
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="18" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

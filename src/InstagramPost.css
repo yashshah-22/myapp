@@ -1,0 +1,52 @@
+/* InstagramPost.css */
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.0975);
+  }
+  
+  .post img {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .buttons button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .buttons button i {
+    margin-right: 0.5rem;
+  }
+  
+  .buttons button.liked i {
+    color: #ed4956;
+  }
+  
+  .counts {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #8e8e8e;
+    text-transform: uppercase;
+  }
+  
